@@ -1,8 +1,9 @@
+    <!DOCTYPE html>
 <html lang="uz">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ingliz Tili | O'zbek tilida</title>
+<title>ABC_GO - Ingliz Tili Kursi</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=DM+Sans:wght@400;500;700&display=swap');
 :root{--bg:#070712;--s1:#0f0f1e;--s2:#181830;--s3:#222240;--ac:#7c6fff;--ac2:#ff6b8a;--ac3:#3ee8a0;--ac4:#ffb347;--tx:#eeeef8;--mt:#606090;--bd:rgba(124,111,255,.18);}
@@ -62,7 +63,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 .nc .n{font-family:'Unbounded',sans-serif;font-weight:700;color:var(--ac4);font-size:14px;min-width:24px;}
 /* COLORS */
 .cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(115px,1fr));gap:8px;}
-.cc{border-radius:11px;padding:12px;cursor:pointer;transition:transform .2s;}
+.cc{border-radius:11px;padding:12px;cursor:pointer;transition:transform .2s;text-align:center;font-weight:bold;}
 .cc:hover{transform:scale(1.04);}
 /* GRAMMAR */
 .gb{background:var(--s2);border-left:3px solid var(--ac);border-radius:0 11px 11px 0;padding:13px 16px;margin:9px 0;font-size:13px;line-height:1.8;}
@@ -80,54 +81,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 .bbl .wh{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--mt);margin-bottom:3px;}
 .bbl .eg{font-weight:500;}
 .bbl .uz3{font-size:11px;color:var(--mt);margin-top:2px;}
-/* QUIZ */
-.qa{background:var(--s2);border-radius:13px;padding:16px;margin-top:13px;}
-.qq{font-family:'Unbounded',sans-serif;font-size:10px;color:var(--ac);margin-bottom:9px;letter-spacing:1px;}
-.qqt{font-size:17px;font-weight:700;margin-bottom:13px;}
-.qo{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:11px;}
-.qb{background:var(--s1);border:1px solid var(--bd);border-radius:9px;padding:10px 11px;cursor:pointer;font-size:13px;transition:all .2s;text-align:center;}
-.qb:hover{border-color:var(--ac);}
-.qb.ok{border-color:var(--ac3);background:rgba(62,232,160,.1);color:var(--ac3);}
-.qb.no{border-color:var(--ac2);background:rgba(255,107,138,.1);color:var(--ac2);}
-.qnxt{background:var(--ac);color:#fff;border:none;border-radius:9px;padding:10px 20px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;display:none;}
-.qsc{font-size:12px;color:var(--mt);margin-top:6px;}
-/* OVERVIEW */
+.sl{font-family:'Unbounded',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin:22px 0 9px;}
 .ov{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:9px;margin-bottom:24px;}
 .ovc{background:var(--s1);border:1px solid var(--bd);border-radius:15px;padding:16px 13px;cursor:pointer;transition:all .22s;text-align:center;}
 .ovc:hover{border-color:var(--ac);transform:translateY(-3px);}
 .ovc .on2{font-family:'Unbounded',sans-serif;font-size:24px;font-weight:900;margin-bottom:5px;}
 .ovc .ot{font-size:11px;font-weight:600;margin-bottom:2px;}
 .ovc .os{font-size:10px;color:var(--mt);}
-.tag{display:inline-block;background:rgba(124,111,255,.12);color:var(--ac);font-size:10px;padding:2px 8px;border-radius:100px;font-weight:600;margin-right:3px;}
-.tag.g{background:rgba(62,232,160,.1);color:var(--ac3);}
-.tag.o{background:rgba(255,179,71,.1);color:var(--ac4);}
-.tag.r{background:rgba(255,107,138,.1);color:var(--ac2);}
-.sl{font-family:'Unbounded',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--mt);margin:22px 0 9px;}
-hr{border:none;border-top:1px solid var(--bd);margin:14px 0;}
-/* MODAL */
-.mo{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);z-index:999;align-items:center;justify-content:center;padding:14px;}
-.mo.on{display:flex;}
-.mi{background:var(--s1);border:1px solid rgba(124,111,255,.3);border-radius:22px;padding:24px 20px;max-width:380px;width:100%;text-align:center;animation:pi .3s cubic-bezier(.34,1.56,.64,1);}
-@keyframes pi{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
-.cw{width:240px;height:240px;margin:0 auto 12px;border-radius:14px;overflow:hidden;background:var(--s2);border:2px solid var(--bd);position:relative;}
-#lc{display:block;width:240px;height:240px;}
-.pbw{width:100%;height:4px;background:var(--s3);border-radius:4px;margin-bottom:12px;overflow:hidden;}
-.pbi{height:100%;background:var(--ac);border-radius:4px;transition:width .05s linear;}
-.cc2{display:flex;gap:7px;justify-content:center;margin-bottom:12px;}
-.cb2{background:var(--s2);border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:7px 14px;cursor:pointer;font-size:12px;font-family:'DM Sans',sans-serif;transition:all .2s;}
-.cb2:hover{background:var(--ac);border-color:var(--ac);}
-.cb2.pl{background:rgba(62,232,160,.12);border-color:var(--ac3);color:var(--ac3);}
-.ml{font-family:'Unbounded',sans-serif;font-size:17px;font-weight:900;color:var(--ac);margin-bottom:3px;}
-.mp{font-size:15px;color:#b0a8ff;margin-bottom:3px;}
-.me{font-size:12px;color:var(--mt);margin-bottom:12px;}
-.wr{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;}
-.wp{background:var(--s2);border:1px solid var(--bd);border-radius:100px;padding:5px 13px;font-size:12px;cursor:pointer;transition:all .2s;}
-.wp:hover{border-color:var(--ac);color:var(--ac);}
-.spkb{background:var(--ac);color:#fff;border:none;border-radius:11px;padding:11px 24px;font-size:14px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;width:100%;transition:all .2s;margin-bottom:8px;}
-.spkb:hover{opacity:.85;}
-.spkb:active{transform:scale(.97);}
-.cls{background:var(--s2);border:1px solid var(--bd);color:var(--tx);border-radius:11px;padding:9px 22px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:13px;width:100%;}
-@media(max-width:460px){.qo{grid-template-columns:1fr;}.ov{grid-template-columns:repeat(2,1fr);}.agrid{grid-template-columns:repeat(auto-fill,minmax(62px,1fr));}}
+@media(max-width:460px){.ov{grid-template-columns:repeat(2,1fr);}.agrid{grid-template-columns:repeat(auto-fill,minmax(62px,1fr));}}
 </style>
 </head>
 <body>
@@ -135,7 +96,7 @@ hr{border:none;border-top:1px solid var(--bd);margin:14px 0;}
 <div class="hero">
   <div class="badge">&#127468;&#127463; Ingliz tili kursi &mdash; Offline</div>
   <h1>Inglizchani<br><span>bosqichma-bosqich</span><br>o'rgan</h1>
-  <p>A1 &#8594; B1 &middot; O'zbek tilida &middot; Internetisiz ishlaydi</p>
+  <p>A1 &rarr; B1 &middot; O'zbek tilida &middot; Internetisiz ishlaydi</p>
 </div>
 
 <div class="snav">
@@ -149,124 +110,223 @@ hr{border:none;border-top:1px solid var(--bd);margin:14px 0;}
 
 <div class="wrap">
 
-<!-- S0 HOME -->
-<div class="sec on" id="s0">
-  <div class="ov">
-    <div class="ovc" onclick="goS(1)"><div class="on2" style="color:#7c6fff">1</div><div class="ot">Boshlang'ich</div><div class="os">Alifbo &middot; Salomlashish</div></div>
-    <div class="ovc" onclick="goS(2)"><div class="on2" style="color:#ff6b8a">2</div><div class="ot">So'zlar</div><div class="os">Sonlar &middot; Ranglar</div></div>
-    <div class="ovc" onclick="goS(3)"><div class="on2" style="color:#3ee8a0">3</div><div class="ot">Grammatika</div><div class="os">To be &middot; Tenses</div></div>
-    <div class="ovc" onclick="goS(4)"><div class="on2" style="color:#ffb347">4</div><div class="ot">Suhbat</div><div class="os">Do'kon &middot; Restoran</div></div>
-    <div class="ovc" onclick="goS(5)"><div class="on2" style="color:#b0a8ff">5</div><div class="ot">Keyingi Level</div><div class="os">Past &middot; Future &middot; Modal</div></div>
-  </div>
-  <div class="card op">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(124,111,255,.12)">&#128161;</div>
-      <div class="ct"><h3>Kursdan qanday foydalanish?</h3><p>Boshlash uchun o'qing</p></div>
-      <span class="ti">&#9660;</span>
+  <!-- S0 HOME -->
+  <div class="sec on" id="s0">
+    <div class="ov">
+      <div class="ovc" onclick="goS(1)"><div class="on2" style="color:#7c6fff">1</div><div class="ot">Boshlang'ich</div><div class="os">Alifbo &middot; Salomlashish</div></div>
+      <div class="ovc" onclick="goS(2)"><div class="on2" style="color:#ff6b8a">2</div><div class="ot">So'zlar</div><div class="os">Sonlar &middot; Ranglar</div></div>
+      <div class="ovc" onclick="goS(3)"><div class="on2" style="color:#3ee8a0">3</div><div class="ot">Grammatika</div><div class="os">To be &middot; Tenses</div></div>
+      <div class="ovc" onclick="goS(4)"><div class="on2" style="color:#ffb347">4</div><div class="ot">Suhbat</div><div class="os">Do'kon &middot; Restoran</div></div>
+      <div class="ovc" onclick="goS(5)"><div class="on2" style="color:#b0a8ff">5</div><div class="ot">Keyingi Level</div><div class="os">Past &middot; Future &middot; Modal</div></div>
     </div>
-    <div class="cb">
-      <div class="gb">&#9989; <strong>Ketma-ket o'rganing</strong> &mdash; 1-bosqichdan boshlang</div>
-      <div class="gb g">&#128266; <strong>Har bir harfni bosing</strong> &mdash; animatsiya va ovoz chiqadi</div>
-      <div class="gb o">&#128241; <strong>Internetisiz ishlaydi</strong> &mdash; HTML faylni brauzerda oching</div>
-    </div>
-  </div>
-</div>
-
-<!-- S1 ALPHABET -->
-<div class="sec" id="s1">
-  <div class="card op">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(124,111,255,.15)">&#128292;</div>
-      <div class="ct"><h3>Ingliz Alifbosi (A&ndash;Z)</h3><p>Har bir harfni bosing &rarr; animatsiya + ovoz</p></div>
-      <span class="ti">&#9660;</span>
-    </div>
-    <div class="cb"><div class="agrid" id="agrid"></div></div>
-  </div>
-  <div class="card">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(255,107,138,.15)">&#128075;</div>
-      <div class="ct"><h3>Salomlashish</h3><p>Birinchi iboralar</p></div>
-      <span class="ti">&#9660;</span>
-    </div>
-    <div class="cb">
-      <table class="wt">
-        <tr><th>Inglizcha</th><th>Talaffuz</th><th>O'zbekcha</th></tr>
-        <tr><td class="en">Hello <button class="spk" onclick="sp('Hello')">&#128266;</button></td><td class="pr">[heˈloʊ]</td><td class="uz">Salom</td></tr>
-        <tr><td class="en">Hi <button class="spk" onclick="sp('Hi')">&#128266;</button></td><td class="pr">[haɪ]</td><td class="uz">Salom (norasmiy)</td></tr>
-        <tr><td class="en">Good morning <button class="spk" onclick="sp('Good morning')">&#128266;</button></td><td class="pr">[gʊd ˈmɔːrnɪŋ]</td><td class="uz">Xayrli tong</td></tr>
-        <tr><td class="en">Good afternoon <button class="spk" onclick="sp('Good afternoon')">&#128266;</button></td><td class="pr">[gʊd ˌæftərˈnuːn]</td><td class="uz">Xayrli kun</td></tr>
-        <tr><td class="en">Good evening <button class="spk" onclick="sp('Good evening')">&#128266;</button></td><td class="pr">[gʊd ˈiːvnɪŋ]</td><td class="uz">Xayrli kech</td></tr>
-        <tr><td class="en">Goodbye <button class="spk" onclick="sp('Goodbye')">&#128266;</button></td><td class="pr">[ˌgʊdˈbaɪ]</td><td class="uz">Xayr</td></tr>
-        <tr><td class="en">How are you? <button class="spk" onclick="sp('How are you?')">&#128266;</button></td><td class="pr">[haʊ ɑːr juː]</td><td class="uz">Qandaysiz?</td></tr>
-        <tr><td class="en">I'm fine, thank you <button class="spk" onclick="sp(&quot;I'm fine, thank you&quot;)">&#128266;</button></td><td class="pr">[aɪm faɪn θæŋk juː]</td><td class="uz">Yaxshi, rahmat</td></tr>
-        <tr><td class="en">Nice to meet you <button class="spk" onclick="sp('Nice to meet you')">&#128266;</button></td><td class="pr">[naɪs tə miːt juː]</td><td class="uz">Tanishganimdan xursandman</td></tr>
-        <tr><td class="en">See you later <button class="spk" onclick="sp('See you later')">&#128266;</button></td><td class="pr">[siː juː ˈleɪtər]</td><td class="uz">Ko'rishguncha</td></tr>
-      </table>
-    </div>
-  </div>
-  <div class="card">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(62,232,160,.15)">&#128587;</div>
-      <div class="ct"><h3>O'zingni tanishtirish</h3><p>My name is... I am from...</p></div>
-      <span class="ti">&#9660;</span>
-    </div>
-    <div class="cb">
-      <table class="wt">
-        <tr><th>Inglizcha</th><th>O'zbekcha</th></tr>
-        <tr><td class="en">My name is Ali. <button class="spk" onclick="sp('My name is Ali.')">&#128266;</button></td><td class="uz">Mening ismim Ali.</td></tr>
-        <tr><td class="en">I am from Uzbekistan. <button class="spk" onclick="sp('I am from Uzbekistan.')">&#128266;</button></td><td class="uz">Men O'zbekistondan.</td></tr>
-        <tr><td class="en">I am 20 years old. <button class="spk" onclick="sp('I am 20 years old.')">&#128266;</button></td><td class="uz">Men 20 yoshdaman.</td></tr>
-        <tr><td class="en">I am a student. <button class="spk" onclick="sp('I am a student.')">&#128266;</button></td><td class="uz">Men talabaman.</td></tr>
-        <tr><td class="en">I live in Tashkent. <button class="spk" onclick="sp('I live in Tashkent.')">&#128266;</button></td><td class="uz">Men Toshkentda yashayman.</td></tr>
-        <tr><td class="en">What is your name? <button class="spk" onclick="sp('What is your name?')">&#128266;</button></td><td class="uz">Ismingiz nima?</td></tr>
-        <tr><td class="en">Where are you from? <button class="spk" onclick="sp('Where are you from?')">&#128266;</button></td><td class="uz">Qayerdansiz?</td></tr>
-        <tr><td class="en">How old are you? <button class="spk" onclick="sp('How old are you?')">&#128266;</button></td><td class="uz">Nechanchi yoshdasiz?</td></tr>
-      </table>
-      <div class="sl">Namuna suhbat</div>
-      <div class="dlg">
-        <div class="bbl a"><div class="wh">A</div><div class="eg">Hello! My name is Sarah. What is your name?</div><div class="uz3">Salom! Mening ismim Sarah. Ismingiz nima?</div></div>
-        <div class="bbl b"><div class="wh">B</div><div class="eg">Hi! My name is Ali. Nice to meet you!</div><div class="uz3">Salom! Mening ismim Ali. Tanishganimdan xursandman!</div></div>
-        <div class="bbl a"><div class="wh">A</div><div class="eg">Where are you from?</div><div class="uz3">Qayerdansiz?</div></div>
-        <div class="bbl b"><div class="wh">B</div><div class="eg">I am from Uzbekistan. And you?</div><div class="uz3">Men O'zbekistondan. Siz-chi?</div></div>
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(124,111,255,.12)">&#128161;</div>
+        <div class="ct"><h3>Kursdan qanday foydalanish?</h3><p>Boshlash uchun o'qing</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;">
+        <div class="gb">&#9989; <strong>Ketma-ket o'rganing</strong> &mdash; 1-bosqichdan boshlang</div>
+        <div class="gb g">&#128266; <strong>Har bir so'zni bosing</strong> &mdash; ovozli talaffuz chiqadi</div>
+        <div class="gb o">&#128241; <strong>Internetisiz ishlaydi</strong> &mdash; Istalgan vaqtda foydalaning</div>
       </div>
     </div>
   </div>
+
+  <!-- S1 ALPHABET -->
+  <div class="sec" id="s1">
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(124,111,255,.15)">&#128292;</div>
+        <div class="ct"><h3>Ingliz Alifbosi (A&ndash;Z)</h3><p>Har bir harfni bosing &rarr; ovozli talaffuz</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;"><div class="agrid" id="agrid"></div></div>
+    </div>
+    
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(255,107,138,.15)">&#12075;</div>
+        <div class="ct"><h3>Salomlashish</h3><p>Birinchi iboralar</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;">
+        <table class="wt">
+          <tr><th>Inglizcha</th><th>Talaffuz</th><th>O'zbekcha</th></tr>
+          <tr><td class="en">Hello <button class="spk" onclick="sp('Hello')">&#128266;</button></td><td class="pr">[heˈloʊ]</td><td class="uz">Salom</td></tr>
+          <tr><td class="en">Hi <button class="spk" onclick="sp('Hi')">&#128266;</button></td><td class="pr">[haɪ]</td><td class="uz">Salom (norasmiy)</td></tr>
+          <tr><td class="en">Good morning <button class="spk" onclick="sp('Good morning')">&#128266;</button></td><td class="pr">[gʊd ˈmɔːrnɪŋ]</td><td class="uz">Xayrli tong</td></tr>
+          <tr><td class="en">Good afternoon <button class="spk" onclick="sp('Good afternoon')">&#128266;</button></td><td class="pr">[gʊd ˌæftərˈnuːn]</td><td class="uz">Xayrli kun</td></tr>
+          <tr><td class="en">Goodbye <button class="spk" onclick="sp('Goodbye')">&#128266;</button></td><td class="pr">[ˌgʊdˈbaɪ]</td><td class="uz">Xayr</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- S2 WORDS -->
+  <div class="sec" id="s2">
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(255,179,71,.15)">&#128290;</div>
+        <div class="ct"><h3>Sonlar (1&ndash;20)</h3><p>Bosing va eshiting</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;">
+        <div class="ngrid" id="ng1"></div>
+      </div>
+    </div>
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(255,107,138,.15)">&#127912;</div>
+        <div class="ct"><h3>Ranglar (Colors)</h3><p>Bosing va eshiting</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;">
+        <div class="cgrid" id="clrg"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S3 GRAMMAR -->
+  <div class="sec" id="s3">
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(62,232,160,.15)">&#128214;</div>
+        <div class="ct"><h3>To Be fe'li</h3><p>Asosiy grammatika</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;">
+        <div class="gb">Ingliz tilida gap tuzish uchun eng muhim fe'l <strong>To be (bo'lmoq)</strong> fe'lidir. U hozirgi zamonda 3 ga bo'linadi: <strong>am, is, are</strong>.</div>
+        <div class="ex"><div class="eg">I am a teacher. <button class="spk" onclick="sp('I am a teacher')">&#128266;</button></div><div class="uz2">Men o'qituvchiman.</div></div>
+        <div class="ex"><div class="eg">He is happy. <button class="spk" onclick="sp('He is happy')">&#128266;</button></div><div class="uz2">U baxtli.</div></div>
+        <div class="ex"><div class="eg">They are friends. <button class="spk" onclick="sp('They are friends')">&#128266;</button></div><div class="uz2">Ular do'stlar.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S4 DIALOGUE -->
+  <div class="sec" id="s4">
+    <div class="card op">
+      <div class="ch" onclick="tc(this)">
+        <div class="ci" style="background:rgba(255,179,71,.15)">&#128172;</div>
+        <div class="ct"><h3>Kundalik Suhbat</h3><p>Namuna muloqot</p></div>
+        <span class="ti">&#9660;</span>
+      </div>
+      <div class="cb" style="display:block;">
+        <div class="dlg">
+          <div class="bbl a"><div class="wh">Sarah <button class="spk" onclick="sp('Hello! My name is Sarah. What is your name?')">&#128266;</button></div><div class="eg">Hello! My name is Sarah. What is your name?</div><div class="uz3">Salom! Mening ismim Sarah. Ismingiz nima?</div></div>
+          <div class="bbl b"><div class="wh">Ali <button class="spk" onclick="sp('Hi! My name is Ali. Nice to meet you!')">&#128266;</button></div><div class="eg">Hi! My name is Ali. Nice to meet you!</div><div class="uz3">Salom! Mening ismim Ali. Tanishganimdan xursandman!</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S5 NEXT -->
+  <div class="sec" id="s5">
+    <div class="card op">
+      <div class="ch">
+        <div class="ci" style="background:rgba(176,168,255,.15)">&#128640;</div>
+        <div class="ct"><h3>Keyingi Bosqichlar</h3><p>Tez kunda qo'shiladi</p></div>
+      </div>
+      <div class="cb" style="display:block;">
+        <div class="gb o">B1 va B2 darajadagi darslar hamda yangi audio lug'atlar tez orada shu bo'limda paydo bo'ladi!</div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<!-- S2 WORDS -->
-<div class="sec" id="s2">
-  <div class="card op">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(255,179,71,.15)">&#128290;</div>
-      <div class="ct"><h3>Sonlar (1&ndash;100)</h3><p>Bosing va eshiting</p></div>
-      <span class="ti">&#9660;</span>
-    </div>
-    <div class="cb">
-      <div class="sl">1&ndash;20</div><div class="ngrid" id="ng1"></div>
-      <div class="sl">O'nlar</div><div class="ngrid" id="ng2"></div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(255,107,138,.15)">&#127912;</div>
-      <div class="ct"><h3>Ranglar (Colors)</h3><p>Bosing va eshiting</p></div>
-      <span class="ti">&#9660;</span>
-    </div>
-    <div class="cb"><div class="cgrid" id="clrg"></div></div>
-  </div>
-  <div class="card">
-    <div class="ch" onclick="tc(this)">
-      <div class="ci" style="background:rgba(124,111,255,.15)">&#128197;</div>
-      <div class="ct"><h3>Hafta kunlari &amp; Oylar</h3><p>Days &amp; Months</p></div>
-      <span class="ti">&#9660;</span>
-    </div>
-    <div class="cb">
-      <div class="sl">Hafta kunlari</div>
-      <table class="wt">
-        <tr><th>Inglizcha</th><th>Talaffuz</th><th>O'zbekcha</th></tr>
-        <tr><td class="en">Monday <button class="spk" onclick="sp('Monday')">&#128266;</button></td><td class="pr">[ˈmʌndeɪ]</td><td class="uz">Dushanba</td></tr>
-        <tr><td class="en">Tuesday <button class="spk" onclick="sp('Tuesday')">&#128266;</button></td><td class="pr">[ˈtjuːzdeɪ]</td><td class="uz">Seshanba</td></tr>
-        <tr><td class="en">Wednesday <button class="spk" onclick="sp('Wednesday')">&#128266;</button></td><td class="pr">[ˈwenzdeɪ]</td><td class="uz">Chorshanba</td></tr>
-        <tr><td class="en">Thursday <button class="spk" onclick="sp('Thursday')">&#128266;</button></td><td class="pr">[ˈθɜːrzdeɪ]</td><td class="uz">Payshanba</td></tr>
-        <tr><td class="en">Friday <button class="spk" onclick="sp('Friday')">&#128266;</button></td><td class="pr">[ˈfraɪdeɪ]</td><td class="uz">Juma</td></tr>
-        <tr><td class="en">Saturday <button class="spk" onclick="sp('Saturday')">&#128266;</button></td><td class="pr">[ˈsætərdeɪ]</t# english-course_saydullo_go
+<script>
+// SAHIFALARNI ALMAASHTIRISH (NAVIGATSIYA)
+function goS(num) {
+  // Barcha bo'limlarni yopish
+  document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
+  // Tanlangan bo'limni ochish
+  document.getElementById('s' + num).classList.add('on');
+  
+  // Tugmalarni aktiv qilish
+  document.querySelectorAll('.sbtn').forEach(b => b.classList.remove('on'));
+  document.querySelectorAll('.snav .sbtn')[num].classList.add('on');
+}
+
+// AKKORDEON (CARD) OCHIB YOPISH
+function tc(el) {
+  el.parentElement.classList.toggle('op');
+  let body = el.nextElementSibling;
+  if(body.style.display === 'block') {
+    body.style.display = 'none';
+  } else {
+    body.style.display = 'block';
+  }
+}
+
+// OVOZ CHIQARISH (TEXT-TO-SPEECH)
+function sp(text) {
+  if ('speechSynthesis' in window) {
+    let u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = 0.85; 
+    window.speechSynthesis.cancel(); 
+    window.speechSynthesis.speak(u);
+  } else {
+    alert("Kechirasiz, qurilmangizda ovoz chiqarish tizimi ishlamaydi.");
+  }
+}
+
+// ALIFBONI AVTOMATIK YARATISH
+const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+const alphUz = {
+  A:'Ey', B:'Bi', C:'Si', D:'Di', E:'I', F:'Ef', G:'Ji', H:'Eych', I:'Ay', J:'Jey', K:'Key', L:'El', M:'Em', 
+  N:'En', O:'Ou', P:'Pi', Q:'Kyu', R:'Ar', S:'Es', T:'Ti', U:'Yu', V:'Vi', W:'Dablyu', X:'Eks', Y:'Uay', Z:'Zed'
+};
+let ag = document.getElementById('agrid');
+if(ag) {
+  alpha.forEach(l => {
+    let div = document.createElement('div');
+    div.className = 'alc';
+    div.onclick = () => sp(l);
+    div.innerHTML = `<div class="bl">${l}</div><div class="sl">[${alphUz[l]}]</div>`;
+    ag.appendChild(div);
+  });
+}
+
+// SONLARNI AVTOMATIK YARATISH
+const nums = [
+  {n:1, e:'One'}, {n:2, e:'Two'}, {n:3, e:'Three'}, {n:4, e:'Four'}, {n:5, e:'Five'},
+  {n:6, e:'Six'}, {n:7, e:'Seven'}, {n:8, e:'Eight'}, {n:9, e:'Nine'}, {n:10, e:'Ten'},
+  {n:11, e:'Eleven'}, {n:12, e:'Twelve'}, {n:13, e:'Thirteen'}, {n:14, e:'Fourteen'}, {n:15, e:'Fifteen'},
+  {n:16, e:'Sixteen'}, {n:17, e:'Seventeen'}, {n:18, e:'Eighteen'}, {n:19, e:'Nineteen'}, {n:20, e:'Twenty'}
+];
+let ng1 = document.getElementById('ng1');
+if(ng1) {
+  nums.forEach(x => {
+    let div = document.createElement('div');
+    div.className = 'nc';
+    div.onclick = () => sp(x.e);
+    div.innerHTML = `<div class="n">${x.n}</div><div><div style="font-size:12px;font-weight:600;">${x.e}</div></div>`;
+    ng1.appendChild(div);
+  });
+}
+
+// RANGLARNI AVTOMATIK YARATISH
+const clrs = [
+  {e:'Red', u:'Qizil', c:'#ff4d4d', t:'#000'}, {e:'Blue', u:'Ko\'k', c:'#4d94ff', t:'#000'},
+  {e:'Green', u:'Yashil', c:'#2ecc71', t:'#000'}, {e:'Yellow', u:'Sariq', c:'#f1c40f', t:'#000'},
+  {e:'White', u:'Oq', c:'#ffffff', t:'#000'}, {e:'Black', u:'Qora', c:'#111111', t:'#fff'}
+];
+let cg = document.getElementById('clrg');
+if(cg) {
+  clrs.forEach(c => {
+    let div = document.createElement('div');
+    div.className = 'cc';
+    div.style.background = c.c;
+    div.style.color = c.t;
+    div.onclick = () => sp(c.e);
+    div.innerHTML = `<div>${c.e}</div><div style="font-size:11px;opacity:0.8;">${c.u}</div>`;
+    cg.appendChild(div);
+  });
+}
+</script>
+
+</body>
+</html>
