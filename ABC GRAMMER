@@ -49,7 +49,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 .wt th{text-align:left;padding:9px 11px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mt);border-bottom:1px solid var(--bd);}
 .wt td{padding:10px 11px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top;}
 .wt tr:last-child td{border-bottom:none;}
-[06/06/2026 15:11] Saydullo Tursunboyev: .wt tr:hover td{background:rgba(124,111,255,.05);}
+.wt tr:hover td{background:rgba(124,111,255,.05);}
 .en{font-weight:600;color:var(--ac);font-size:14px;}
 .pr{color:#b0a8ff;font-style:italic;font-size:12px;}
 .uz{color:var(--tx);}
@@ -98,7 +98,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 
 .lesson-road{display:flex;flex-direction:column;gap:14px;padding-bottom:10px;}
 .lesson-node{position:relative;display:flex;align-items:center;gap:16px;background:var(--s1);border:1.5px solid var(--bd);border-radius:18px;padding:16px 18px;cursor:pointer;transition:all .25s;}
-[06/06/2026 15:11] Saydullo Tursunboyev: .lesson-node.unlocked:hover{border-color:rgba(124,111,255,.5);transform:translateX(4px);box-shadow:0 6px 24px rgba(124,111,255,.12);}
+.lesson-node.unlocked:hover{border-color:rgba(124,111,255,.5);transform:translateX(4px);box-shadow:0 6px 24px rgba(124,111,255,.12);}
 .lesson-node.locked{opacity:.55;cursor:not-allowed;filter:grayscale(.4);}
 .lesson-node.completed{border-color:rgba(62,232,160,.35);background:rgba(62,232,160,.04);}
 .lesson-node.active{border-color:rgba(124,111,255,.6);background:rgba(124,111,255,.06);animation:nodePulse 2.5s infinite;}
@@ -143,7 +143,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 .tp-progress-bar{height:100%;background:linear-gradient(90deg,#7c6fff,#3ee8a0);border-radius:5px;transition:width .3s ease;}
 .q-block{background:var(--s1);border:1px solid var(--bd);border-radius:18px;padding:20px;}
 .q-num{font-size:10px;color:var(--ac);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;font-weight:700;}
-[06/06/2026 15:11] Saydullo Tursunboyev: .q-text{font-size:16px;font-weight:700;margin-bottom:16px;line-height:1.5;}
+.q-text{font-size:16px;font-weight:700;margin-bottom:16px;line-height:1.5;}
 .q-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;}
 .q-opt{background:var(--s2);border:1.5px solid var(--bd);border-radius:11px;padding:11px 14px;cursor:pointer;font-size:13px;text-align:center;transition:all .2s;}
 .q-opt:hover:not(.done){border-color:var(--ac);background:rgba(124,111,255,.08);}
@@ -196,7 +196,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
 </div>
 
 <div class="wrap">
-[06/06/2026 15:11] Saydullo Tursunboyev: <div class="sec on" id="s0">
+
+  <div class="sec on" id="s0">
     <div class="ov">
       <div class="ovc" onclick="goS(1)"><div class="on2" style="color:#7c6fff">1</div><div class="ot">Boshlang'ich</div><div class="os">Alifbo &middot; Talaffuz</div></div>
       <div class="ovc" onclick="goS(2)"><div class="on2" style="color:#ff6b8a">2</div><div class="ot">So'zlar</div><div class="os">Kasblar &middot; Sonlar</div></div>
@@ -276,11 +277,401 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);overf
       <div class="result-card">
         <div class="result-icon" id="rIcon"></div>
         <div class="result-score" id="rScore"></div>
-[06/06/2026 15:11] Saydullo Tursunboyev: <div class="result-msg" id="rMsg"></div>
+        <div class="result-msg" id="rMsg"></div>
         <div class="result-detail" id="rDetail"></div>
         <div class="unlock-anim" id="unlockAnim">
           <div class="unlock-text">&udarr; Yangi Bosqich Ochildi! &udarr;</div>
         </div>
         <div class="result-btns">
           <button class="rbtn retry" onclick="retryTest()">Qayta urinish</button>
-          <button class="rbtn next" id="rNextBtn" onclick=
+          <button class="rbtn next" id="rNextBtn" onclick="goNextLesson()">Keyingi dars</button>
+          <button class="rbtn back" onclick="backToRoad()">Yo'lakka qaytish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" id="s4">
+    <div class="card">
+      <h3>Kundalik Salomlashish</h3><br>
+      <div class="dlg">
+        <div class="bbl a"><div class="wh">Anvar</div><div class="eg">Hello! How are you?</div><div class="uz3">Salom! Ahvollaringiz qanday?</div></div>
+        <div class="bbl b"><div class="wh">Sardor</div><div class="eg">Hi! I am fine, thank you.</div><div class="uz3">Salom! Yaxshiman, rahmat.</div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mo" id="mo">
+  <div class="mi">
+    <h2 class="ml" id="mL">A</h2>
+    <p class="mp" id="mP">[ei]</p>
+    <button class="spkb" id="mSpk">Eshitish &#128266;</button>
+    <button class="cls" onclick="closeMo()">Yopish</button>
+  </div>
+</div>
+
+<script>
+/* ===================== NAVIGATION ===================== */
+function goS(idx) {
+  var secs = document.querySelectorAll('.sec');
+  var btns = document.querySelectorAll('.snav .sbtn');
+  secs.forEach(s => s.classList.remove('on'));
+  btns.forEach(b => b.classList.remove('on'));
+  
+  if(idx === 0) document.getElementById('s0').classList.add('on');
+  else if(idx === 1) document.getElementById('s1').classList.add('on');
+  else if(idx === 2) document.getElementById('s2').classList.add('on');
+  else if(idx === 3) {
+    document.getElementById('s3').classList.add('on');
+    backToRoad(); 
+  }
+  else if(idx === 4) document.getElementById('s4').classList.add('on');
+  
+  if(btns[idx]) btns[idx].classList.add('on');
+}
+
+/* ===================== SPEECH ENGINE ===================== */
+function sp(txt) {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(txt);
+    u.lang = 'en-US';
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  } else {
+    alert("Qurilmangizda ovoz matni qo'llab-quvvatlanmaydi.");
+  }
+}
+
+/* ===================== ALPHABET DATA & BUILD ===================== */
+var AD = [
+  {l:'A',p:'[ei]',c:'#7c6fff'},{l:'B',p:'[bi:]',c:'#ff6b8a'},{l:'C',p:'[si:]',c:'#3ee8a0'},
+  {l:'D',p:'[di:]',c:'#ffb347'},{l:'E',p:'[i:]',c:'#b0a8ff'},{l:'F',p:'[ef]',c:'#7c6fff'},
+  {l:'G',p:'[dʒi:]',c:'#ff6b8a'},{l:'H',p:'[eitʃ]',c:'#3ee8a0'},{l:'I',p:'[ai]',c:'#ffb347'}
+];
+
+function buildAlpha(){
+  var g = document.getElementById('agrid');
+  if(!g) return;
+  g.innerHTML = '';
+  AD.forEach(function(d){
+    var c = document.createElement('div');
+    c.className = 'alc';
+    c.style.borderColor = d.c+'44';
+    c.innerHTML = '<div class="bl" style="color:'+d.c+'">'+d.l+'</div>' +
+                  '<div class="sl">'+d.p+'</div>' +
+                  '<div class="hl">&#9654; bosing</div>';
+    c.onclick = function(){ openMo(d); };
+    g.appendChild(c);
+  });
+}
+
+function openMo(d) {
+  document.getElementById('mL').textContent = d.l;
+  document.getElementById('mP').textContent = d.p;
+  document.getElementById('mSpk').onclick = function() { sp(d.l); };
+  document.getElementById('mo').classList.add('on');
+}
+function closeMo() {
+  document.getElementById('mo').classList.remove('on');
+}
+
+/* ===================== GRAMMAR QUEST ENGINE ===================== */
+var LESSONS = [
+  {
+    title: "To Be fe'li (Am, Is, Are)",
+    sub: "Boshlang'ich muloqot asosi",
+    icon: "⚙️",
+    diff: "A1 Boshlang'ich",
+    tag: "a1",
+    content: function() {
+      return '<div class="lc-section"><div class="lc-section-title">Qoida</div>' +
+             '<div class="rule-box"><div class="rule-title">To Be nima?</div>' +
+             '<div class="rule-body">Ingliz tilida shaxs yoki narsaning kim/nimaligini va qayerdaligini ifodalash uchun ishlatiladi (Hozirgi zamonda).</div>' +
+             '<div class="formula">I + AM || He/She/It + IS || We/You/They + ARE</div></div></div>' +
+             '<div class="lc-section"><div class="lc-section-title">Misollar</div>' +
+             '<div class="examples-grid">' +
+             '<div class="ex-card"><div class="ex-en">I am a doctor.</div><div class="ex-uz">Men shifokorman.</div></div>' +
+             '<div class="ex-card"><div class="ex-en">She is happy.</div><div class="ex-uz">U xursand.</div></div>' +
+             '<div class="ex-card"><div class="ex-en">They are at home.</div><div class="ex-uz">Ular uyda.</div></div>' +
+             '</div></div>';
+    },
+    questions: function() {
+      return [
+        {type:'mc', q:'Qaysi jumlada xato bor?', opts:['She is a teacher.','He am a student.','They are friends.'], a:1, exp:'He bilan AM emas, IS keladi.'},
+        {type:'fill', q:'Boʻshliqni toʻldiring: "It ___ a beautiful day."', a:['is'], exp:'It birlik uchinchi shaxs uchun IS mos keladi.'}
+      ];
+    }
+  },
+  {
+    title: "Present Simple (Oddiy hozirgi zamon)",
+    sub: "Doimiy takrorlanadigan ish-harakatlar",
+    icon: "📅",
+    diff: "A1+ Kuchaytirilgan",
+    tag: "a1",
+    content: function() {
+      return '<div class="lc-section"><div class="lc-section-title">Qoida</div>' +
+             '<div class="rule-box"><div class="rule-title">Har kunlik odatlar</div>' +
+             '<div class="rule-body">Har doim yoki odat tusiga kirgan amallarni aytishda foydalanamiz. He/She/It uchun feʼlga <strong>-s</strong> yoki <strong>-es</strong> qoʻshiladi.</div>' +
+             '<div class="formula">Subject + Verb (-s/-es)</div></div></div>' +
+             '<div class="lc-section"><div class="lc-section-title">Misollar</div>' +
+             '<div class="examples-grid">' +
+             '<div class="ex-card"><div class="ex-en">I live in Tashkent.</div><div class="ex-uz">Men Toshkentda yashayman.</div></div>' +
+             '<div class="ex-card"><div class="ex-en">He plays football.</div><div class="ex-uz">U futbol oʻynaydi.</div></div>' +
+             '</div></div>';
+    },
+    questions: function() {
+      return [
+        {type:'mc', q:'"She ___ English every day." jumlaga mosini toping.', opts:['study','studies','studying'], a:1, exp:'He/She/It uchinchi shaxs birlikda feʼlga -es (studies) qoʻshiladi.'}
+      ];
+    }
+  }
+];
+
+var GS = { xp: 0, unlocked: [true, false], scores: [null, null] };
+var curLesson = 0, curQIdx = 0, curScore = 0, curQList = [];
+
+function loadGS(){
+  try {
+    var s = localStorage.getItem('gramState');
+    if(s) {
+      var parsed = JSON.parse(s);
+      if(parsed) GS = parsed;
+    }
+  } catch(e){}
+}
+function saveGS(){
+  try { localStorage.setItem('gramState', JSON.stringify(GS)); } catch(e){}
+}
+
+function initGrammar(){
+  loadGS();
+  renderRoad();
+  updateXPBar();
+}
+
+function renderRoad(){
+  var road = document.getElementById('lessonRoad');
+  if(!road) return;
+  road.innerHTML = '';
+  LESSONS.forEach(function(l, i){
+    if(i > 0){
+      var line = document.createElement('div');
+      line.className = 'connector-line';
+      road.appendChild(line);
+    }
+    var locked = !GS.unlocked[i];
+    var comp = GS.scores[i] !== null && GS.scores[i] >= 75;
+    var cls = 'lesson-node ' + (locked ? 'locked' : (comp ? 'completed' : 'unlocked active'));
+    
+    var node = document.createElement('div');
+    node.className = cls;
+    
+    var score = GS.scores[i];
+    var scoreDisp = score === null ? (locked ? '🔒' : '-') : (score + '/100');
+    var scoreColor = score === null ? 'var(--mt)' : (score >= 75 ? '#3ee8a0' : '#ff6b8a');
+    
+    node.innerHTML = '<div class="ln-icon" style="background:rgba(124,111,255,.12)">' + l.icon + 
+                     (locked ? '<div class="ln-lock">🔒</div>' : '') + '</div>' +
+                     '<div class="ln-body">' +
+                     '<div class="ln-title">' + l.title + '</div>' +
+                     '<div class="ln-meta">' +
+                     '<span class="ln-tag ' + l.tag + '">' + l.diff + '</span>' +
+                     '<span>' + l.sub + '</span>' +
+                     '</div>' +
+                     '</div>' +
+                     '<div class="ln-score">' +
+                     '<div class="ln-score-num" style="color:' + scoreColor + '">' + scoreDisp + '</div>' +
+                     '<div class="ln-score-lbl">BALL</div>' +
+                     '</div>';
+    
+    if(!locked){
+      node.onclick = function() { openLesson(i); };
+    }
+    road.appendChild(node);
+  });
+}
+
+function updateXPBar(){
+  var total = LESSONS.length * 100;
+  var pct = Math.min((GS.xp / total) * 100, 100);
+  document.getElementById('xpBar').style.width = pct + '%';
+  document.getElementById('xpLabel').textContent = 'XP: ' + GS.xp + ' / ' + total;
+}
+
+function openLesson(idx){
+  curLesson = idx;
+  var l = LESSONS[idx];
+  document.getElementById('lpIcon').textContent = l.icon;
+  document.getElementById('lpTitle').textContent = l.title;
+  document.getElementById('lpSub').textContent = l.sub;
+  document.getElementById('lpDiff').textContent = l.diff;
+  document.getElementById('lpContent').innerHTML = l.content();
+  
+  document.getElementById('roadView').style.display = 'none';
+  document.getElementById('testView').style.display = 'none';
+  document.getElementById('resultView').style.display = 'none';
+  document.getElementById('lessonView').style.display = 'block';
+}
+
+function backToRoad(){
+  document.getElementById('lessonView').style.display = 'none';
+  document.getElementById('testView').style.display = 'none';
+  document.getElementById('resultView').style.display = 'none';
+  document.getElementById('roadView').style.display = 'block';
+  renderRoad();
+}
+
+function startTest(){
+  curQIdx = 0;
+  curScore = 0;
+  curQList = LESSONS[curLesson].questions();
+  
+  document.getElementById('lessonView').style.display = 'none';
+  document.getElementById('resultView').style.display = 'none';
+  document.getElementById('testView').style.display = 'block';
+  
+  showQuestion();
+}
+
+function showQuestion(){
+  var pct = (curQIdx / curQList.length) * 100;
+  document.getElementById('tpBar').style.width = pct + '%';
+  
+  var q = curQList[curQIdx];
+  var block = document.getElementById('qBlock');
+  block.innerHTML = '<div class="q-num">Savol ' + (curQIdx + 1) + ' / ' + curQList.length + '</div>' +
+                    '<div class="q-text">' + q.q + '</div>';
+  
+  if(q.type === 'mc') {
+    var optsDiv = document.createElement('div');
+    optsDiv.className = 'q-opts';
+    q.opts.forEach(function(opt, idx){
+      var btn = document.createElement('div');
+      btn.className = 'q-opt';
+      btn.textContent = opt;
+      btn.onclick = function() { checkMCAnswer(idx, btn); };
+      optsDiv.appendChild(btn);
+    });
+    block.appendChild(optsDiv);
+  } else if(q.type === 'fill') {
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'q-fill-input';
+    input.placeholder = 'Javobni yozing...';
+    block.appendChild(input);
+    
+    var subBtn = document.createElement('button');
+    subBtn.className = 'q-submit-btn';
+    subBtn.textContent = 'Tekshirish';
+    subBtn.onclick = function() { checkFillAnswer(input, subBtn); };
+    block.appendChild(subBtn);
+  }
+  
+  var exp = document.createElement('div');
+  exp.className = 'q-explain';
+  exp.id = 'qExp';
+  exp.innerHTML = '<strong>Tushuntirish:</strong> ' + q.exp;
+  block.appendChild(exp);
+  
+  var nxt = document.createElement('button');
+  nxt.className = 'q-next-btn';
+  nxt.id = 'qNxt';
+  nxt.textContent = 'Keyingi savol &rarr;';
+  nxt.onclick = function() { nextQuestion(); };
+  block.appendChild(nxt);
+}
+
+function checkMCAnswer(idx, btn) {
+  var q = curQList[curQIdx];
+  var opts = document.querySelectorAll('.q-opt');
+  opts.forEach(o => o.classList.add('done'));
+  
+  if(idx === q.a) {
+    btn.classList.add('correct');
+    curScore++;
+  } else {
+    btn.classList.add('wrong');
+    opts[q.a].classList.add('correct');
+  }
+  document.getElementById('qExp').style.display = 'block';
+  document.getElementById('qNxt').style.display = 'inline-block';
+}
+
+function checkFillAnswer(input, btn) {
+  if(input.disabled) return;
+  var q = curQList[curQIdx];
+  var val = input.value.trim().toLowerCase();
+  input.disabled = true;
+  btn.style.display = 'none';
+  
+  if(q.a.includes(val)) {
+    input.classList.add('correct');
+    curScore++;
+  } else {
+    input.classList.add('wrong');
+  }
+  document.getElementById('qExp').style.display = 'block';
+  document.getElementById('qNxt').style.display = 'inline-block';
+}
+
+function nextQuestion(){
+  curQIdx++;
+  if(curQIdx < curQList.length) {
+    showQuestion();
+  } else {
+    finishTest();
+  }
+}
+
+function finishTest(){
+  document.getElementById('testView').style.display = 'none';
+  document.getElementById('resultView').style.display = 'block';
+  
+  var finalScore = Math.round((curScore / curQList.length) * 100);
+  var pass = finalScore >= 75;
+  
+  var oldScore = GS.scores[curLesson];
+  if(oldScore === null || finalScore > oldScore) {
+    GS.scores[curLesson] = finalScore;
+    if(oldScore === null) {
+      GS.xp += finalScore;
+    } else {
+      GS.xp += (finalScore - oldScore);
+    }
+  }
+  
+  var unlockNext = false;
+  if(pass && curLesson + 1 < LESSONS.length && !GS.unlocked[curLesson + 1]) {
+    GS.unlocked[curLesson + 1] = true;
+    unlockNext = true;
+  }
+  saveGS();
+  
+  document.getElementById('rIcon').textContent = pass ? '🎉' : '😢';
+  var scoreEl = document.getElementById('rScore');
+  scoreEl.textContent = finalScore + ' BALL';
+  scoreEl.className = 'result-score ' + (pass ? 'pass' : 'fail');
+  
+  document.getElementById('rMsg').textContent = pass ? "Ajoyib natija! Darsni yakunladingiz." : "Afsus, yetarli ball to'play olmadingiz.";
+  document.getElementById('rDetail').innerHTML = "To'g'ri javoblar: <strong>" + curScore + "/" + curQList.length + "</strong>";
+  
+  document.getElementById('unlockAnim').style.display = unlockNext ? 'block' : 'none';
+  document.getElementById('rNextBtn').style.display = (pass && curLesson + 1 < LESSONS.length) ? 'inline-block' : 'none';
+  
+  updateXPBar();
+}
+
+function retryTest(){ startTest(); }
+function goNextLesson(){ openLesson(curLesson + 1); }
+
+/* ===================== INIT ON LOAD ===================== */
+window.onload = function(){
+  buildAlpha();
+  initGrammar();
+};
+</script>
+</body>
+</html>
