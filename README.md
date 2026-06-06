@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.json">
 <style>
-/* ══════════════════════════════════════════════
+
    DESIGN TOKENS — DARK/LIGHT MODE
-══════════════════════════════════════════════ */
+ */
 :root {
   /* Brand */
   --brand: #6c63ff;
