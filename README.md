@@ -69,7 +69,7 @@ html { scroll-behavior:smooth; }
 body {
   font-family:'Plus Jakarta Sans',sans-serif;
   background:var(--bg);
-  color:var(--text);
+  color:#FFFFFF(--text);
   overflow-x:hidden;
   min-height:100vh;
   transition:background .3s var(--ease), color .3s var(--ease);
@@ -128,7 +128,7 @@ body {
   border-radius:99px;
   border:1px solid transparent;
   background:transparent;
-  color:var(--text-2);
+  color:#FFFFFF(--text-2);
   font-family:'Plus Jakarta Sans',sans-serif;
   font-size:12px; font-weight:600;
   cursor:pointer;
@@ -156,7 +156,7 @@ body {
   border-radius:99px;
   padding:5px 12px;
   font-size:12px; font-weight:700;
-  color:var(--brand);
+  color:#FFFFFF(--brand);
   cursor:pointer;
   transition:all .2s;
 }
