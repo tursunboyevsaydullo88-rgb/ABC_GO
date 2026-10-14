@@ -1,4 +1,3 @@
-[123.txt](https://github.com/user-attachments/files/33435539/123.txt)[Uploading<!DOCTYPE html>
 <html lang="uz"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Taklifnoma — online taklifnomalar</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
